@@ -17,7 +17,7 @@ npm install
 npm run dev
 ```
 
-- By default the frontend calls `http://localhost:8000`. To change, set `VITE_API_BASE` in your environment.
+- By default the frontend calls `https://crpf-tender-portal.onrender.com`. To change, set `VITE_API_BASE` in your environment.
 
 Folder structure
 

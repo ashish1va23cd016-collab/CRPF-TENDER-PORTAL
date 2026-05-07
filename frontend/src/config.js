@@ -4,7 +4,7 @@ export function getApiBaseUrl() {
   }
 
   if (import.meta.env.DEV) {
-    return 'http://localhost:8000'
+    return 'https://crpf-tender-portal.onrender.com'
   }
 
   return window.location.origin
