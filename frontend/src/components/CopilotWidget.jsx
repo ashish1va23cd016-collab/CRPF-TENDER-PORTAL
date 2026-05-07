@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
+import { getApiBaseUrl } from '../config';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000';
+const API_BASE = getApiBaseUrl();
 
 export default function CopilotWidget({ tenderText = '', bidderText = '' }) {
   const [isOpen, setIsOpen] = useState(false);

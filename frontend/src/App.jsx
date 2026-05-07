@@ -13,8 +13,9 @@ import ContactUs from './components/ContactUs'
 import CopilotWidget from './components/CopilotWidget'
 import LoginRegister from './components/LoginRegister'
 import BidComparisonMatrix from './components/BidComparisonMatrix'
+import { getApiBaseUrl } from './config'
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000'
+const API_BASE = getApiBaseUrl()
 
 const DEMO_CRITERIA = [
   {criterion: 'Minimum Turnover: 50 Lakhs', type: 'numeric', threshold: 50.0, unit: 'L'},
